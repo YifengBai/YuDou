@@ -14,6 +14,12 @@ class MainViewController: UITabBarController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        addChildVc("Home")
+        addChildVc("Live")
+        addChildVc("Follow")
+        addChildVc("Profile")
+    
     }
 
     override func didReceiveMemoryWarning() {
@@ -21,6 +27,12 @@ class MainViewController: UITabBarController {
         // Dispose of any resources that can be recreated.
     }
     
+    fileprivate func addChildVc(_ storyBoardName: String) {
+        
+        let childVc = UIStoryboard(name: storyBoardName, bundle: nil).instantiateInitialViewController()!
+        
+        addChildViewController(childVc)
+    }
 
     /*
     // MARK: - Navigation
