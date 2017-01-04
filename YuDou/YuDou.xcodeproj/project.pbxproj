@@ -7,8 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8FB4A84A1E1C835A00614903 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FB4A8491E1C835A00614903 /* MainViewController.swift */; };
+		8FB4A84D1E1C8FA300614903 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4A84B1E1C8FA300614903 /* Home.storyboard */; };
+		8FB4A84F1E1C8FB300614903 /* Live.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4A84E1E1C8FB300614903 /* Live.storyboard */; };
+		8FB4A8521E1C8FC300614903 /* Follow.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4A8501E1C8FC300614903 /* Follow.storyboard */; };
+		8FB4A8551E1C8FD200614903 /* Profile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FB4A8531E1C8FD200614903 /* Profile.storyboard */; };
 		8FBF141C1E1BF28C00CA19D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF141B1E1BF28C00CA19D0 /* AppDelegate.swift */; };
-		8FBF141E1E1BF28C00CA19D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8FBF141D1E1BF28C00CA19D0 /* ViewController.swift */; };
 		8FBF14211E1BF28C00CA19D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF141F1E1BF28C00CA19D0 /* Main.storyboard */; };
 		8FBF14231E1BF28C00CA19D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF14221E1BF28C00CA19D0 /* Assets.xcassets */; };
 		8FBF14261E1BF28C00CA19D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8FBF14241E1BF28C00CA19D0 /* LaunchScreen.storyboard */; };
@@ -34,9 +38,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8FB4A8491E1C835A00614903 /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		8FB4A84C1E1C8FA300614903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YuDou/Base.lproj/Home.storyboard; sourceTree = SOURCE_ROOT; };
+		8FB4A84E1E1C8FB300614903 /* Live.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Live.storyboard; path = ../../Main/Controller/Live.storyboard; sourceTree = "<group>"; };
+		8FB4A8511E1C8FC300614903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YuDou/Base.lproj/Follow.storyboard; sourceTree = SOURCE_ROOT; };
+		8FB4A8541E1C8FD200614903 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = YuDou/Base.lproj/Profile.storyboard; sourceTree = SOURCE_ROOT; };
 		8FBF14181E1BF28C00CA19D0 /* YuDou.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YuDou.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8FBF141B1E1BF28C00CA19D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8FBF141D1E1BF28C00CA19D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8FBF14201E1BF28C00CA19D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8FBF14221E1BF28C00CA19D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8FBF14251E1BF28C00CA19D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -87,6 +95,7 @@
 		8FB4A8351E1C805800614903 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4A8501E1C8FC300614903 /* Follow.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -118,6 +127,7 @@
 		8FB4A8391E1C805800614903 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4A84B1E1C8FA300614903 /* Home.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -149,6 +159,7 @@
 		8FB4A83D1E1C805800614903 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4A84E1E1C8FB300614903 /* Live.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -180,6 +191,8 @@
 		8FB4A8411E1C805800614903 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FBF141F1E1BF28C00CA19D0 /* Main.storyboard */,
+				8FB4A8491E1C835A00614903 /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -211,6 +224,7 @@
 		8FB4A8451E1C805800614903 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				8FB4A8531E1C8FD200614903 /* Profile.storyboard */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -261,8 +275,6 @@
 			children = (
 				8FBF14491E1BF55B00CA19D0 /* Classes */,
 				8FBF141B1E1BF28C00CA19D0 /* AppDelegate.swift */,
-				8FBF141D1E1BF28C00CA19D0 /* ViewController.swift */,
-				8FBF141F1E1BF28C00CA19D0 /* Main.storyboard */,
 				8FBF14221E1BF28C00CA19D0 /* Assets.xcassets */,
 				8FBF14241E1BF28C00CA19D0 /* LaunchScreen.storyboard */,
 				8FBF14271E1BF28C00CA19D0 /* Info.plist */,
@@ -414,6 +426,10 @@
 				8FBF14261E1BF28C00CA19D0 /* LaunchScreen.storyboard in Resources */,
 				8FBF14231E1BF28C00CA19D0 /* Assets.xcassets in Resources */,
 				8FBF14211E1BF28C00CA19D0 /* Main.storyboard in Resources */,
+				8FB4A84F1E1C8FB300614903 /* Live.storyboard in Resources */,
+				8FB4A84D1E1C8FA300614903 /* Home.storyboard in Resources */,
+				8FB4A8551E1C8FD200614903 /* Profile.storyboard in Resources */,
+				8FB4A8521E1C8FC300614903 /* Follow.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,8 +454,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8FBF141E1E1BF28C00CA19D0 /* ViewController.swift in Sources */,
 				8FBF141C1E1BF28C00CA19D0 /* AppDelegate.swift in Sources */,
+				8FB4A84A1E1C835A00614903 /* MainViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,12 +491,40 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		8FB4A84B1E1C8FA300614903 /* Home.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB4A84C1E1C8FA300614903 /* Base */,
+			);
+			name = Home.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A8501E1C8FC300614903 /* Follow.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB4A8511E1C8FC300614903 /* Base */,
+			);
+			name = Follow.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A8531E1C8FD200614903 /* Profile.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8FB4A8541E1C8FD200614903 /* Base */,
+			);
+			name = Profile.storyboard;
+			path = ../../Main/Controller;
+			sourceTree = "<group>";
+		};
 		8FBF141F1E1BF28C00CA19D0 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				8FBF14201E1BF28C00CA19D0 /* Base */,
 			);
 			name = Main.storyboard;
+			path = ../../..;
 			sourceTree = "<group>";
 		};
 		8FBF14241E1BF28C00CA19D0 /* LaunchScreen.storyboard */ = {
@@ -589,8 +633,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4939NVSR79;
 				INFOPLIST_FILE = YuDou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bemagine.YuDou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -602,8 +648,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 4939NVSR79;
 				INFOPLIST_FILE = YuDou/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = bemagine.YuDou;
 				PRODUCT_NAME = "$(TARGET_NAME)";
