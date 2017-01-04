@@ -74,6 +74,168 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8FB4A8341E1C805800614903 /* Follow */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A8351E1C805800614903 /* Controller */,
+				8FB4A8361E1C805800614903 /* Model */,
+				8FB4A8371E1C805800614903 /* View */,
+			);
+			path = Follow;
+			sourceTree = "<group>";
+		};
+		8FB4A8351E1C805800614903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A8361E1C805800614903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB4A8371E1C805800614903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB4A8381E1C805800614903 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A8391E1C805800614903 /* Controller */,
+				8FB4A83A1E1C805800614903 /* Model */,
+				8FB4A83B1E1C805800614903 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		8FB4A8391E1C805800614903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A83A1E1C805800614903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB4A83B1E1C805800614903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB4A83C1E1C805800614903 /* Live */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A83D1E1C805800614903 /* Controller */,
+				8FB4A83E1E1C805800614903 /* Model */,
+				8FB4A83F1E1C805800614903 /* View */,
+			);
+			path = Live;
+			sourceTree = "<group>";
+		};
+		8FB4A83D1E1C805800614903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A83E1E1C805800614903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB4A83F1E1C805800614903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB4A8401E1C805800614903 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A8411E1C805800614903 /* Controller */,
+				8FB4A8421E1C805800614903 /* Model */,
+				8FB4A8431E1C805800614903 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		8FB4A8411E1C805800614903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A8421E1C805800614903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB4A8431E1C805800614903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB4A8441E1C805800614903 /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A8451E1C805800614903 /* Controller */,
+				8FB4A8461E1C805800614903 /* Model */,
+				8FB4A8471E1C805800614903 /* View */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		8FB4A8451E1C805800614903 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8FB4A8461E1C805800614903 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8FB4A8471E1C805800614903 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8FB4A8481E1C805800614903 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
 		8FBF140F1E1BF28C00CA19D0 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +259,7 @@
 		8FBF141A1E1BF28C00CA19D0 /* YuDou */ = {
 			isa = PBXGroup;
 			children = (
+				8FBF14491E1BF55B00CA19D0 /* Classes */,
 				8FBF141B1E1BF28C00CA19D0 /* AppDelegate.swift */,
 				8FBF141D1E1BF28C00CA19D0 /* ViewController.swift */,
 				8FBF141F1E1BF28C00CA19D0 /* Main.storyboard */,
@@ -123,6 +286,19 @@
 				8FBF143D1E1BF28D00CA19D0 /* Info.plist */,
 			);
 			path = YuDouUITests;
+			sourceTree = "<group>";
+		};
+		8FBF14491E1BF55B00CA19D0 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				8FB4A8341E1C805800614903 /* Follow */,
+				8FB4A8381E1C805800614903 /* Home */,
+				8FB4A83C1E1C805800614903 /* Live */,
+				8FB4A8401E1C805800614903 /* Main */,
+				8FB4A8441E1C805800614903 /* Profile */,
+				8FB4A8481E1C805800614903 /* Tools */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -512,6 +688,7 @@
 				8FBF14421E1BF28D00CA19D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FBF14431E1BF28D00CA19D0 /* Build configuration list for PBXNativeTarget "YuDouTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +697,7 @@
 				8FBF14451E1BF28D00CA19D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8FBF14461E1BF28D00CA19D0 /* Build configuration list for PBXNativeTarget "YuDouUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +706,7 @@
 				8FBF14481E1BF28D00CA19D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
