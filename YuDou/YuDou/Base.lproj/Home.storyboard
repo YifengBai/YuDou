@@ -11,8 +11,8 @@
         <!--首页-->
         <scene sceneID="OAT-rK-NIq">
             <objects>
-                <navigationController id="nCl-Hq-TaU" customClass="HomeViewCon" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="首页" image="btn_home_normal" selectedImage="btn_home_selected" id="KbH-06-JtE"/>
+                <navigationController id="nCl-Hq-TaU" customClass="CustomNavigationController" customModule="YuDou" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" image="tabHome" selectedImage="tabHomeHL" id="KbH-06-JtE"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="bRm-km-67h">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -47,7 +47,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_home_normal" width="24" height="24"/>
-        <image name="btn_home_selected" width="24" height="24"/>
+        <image name="tabHome" width="24" height="24"/>
+        <image name="tabHomeHL" width="24" height="24"/>
     </resources>
 </document>

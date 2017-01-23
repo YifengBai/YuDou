@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BeautyCell" customModule="YuDou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="303" height="173"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="303" height="173"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="live_cell_default_phone" translatesAutoresizingMaskIntoConstraints="NO" id="Ohg-vU-hYB">
+                        <rect key="frame" x="0.0" y="0.0" width="303" height="143"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="好好学习天天向上" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BaF-4E-YkS">
+                        <rect key="frame" x="30" y="143" width="114.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-gQ-17l">
+                        <rect key="frame" x="239" y="5" width="59" height="15"/>
+                        <color key="backgroundColor" red="0.26040716871131742" green="0.26177055702917773" blue="0.26177055702917773" alpha="0.1727137653374233" colorSpace="custom" customColorSpace="sRGB"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <state key="normal" title="10.4万人" image="close_view_persons"/>
+                    </button>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7nM-og-Wf0">
+                        <rect key="frame" x="149.5" y="143" width="153.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <state key="normal" title="鱼塘" image="ico_location">
+                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_live_player_normal" translatesAutoresizingMaskIntoConstraints="NO" id="ekE-VD-gJg">
+                        <rect key="frame" x="5" y="148" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="9PK-Q1-VYD"/>
+                            <constraint firstAttribute="width" constant="20" id="NbF-NI-dYe"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Ohg-vU-hYB" secondAttribute="trailing" id="5eN-GJ-E0v"/>
+                <constraint firstItem="BaF-4E-YkS" firstAttribute="leading" secondItem="ekE-VD-gJg" secondAttribute="trailing" constant="5" id="6uS-mg-Nny"/>
+                <constraint firstAttribute="trailing" secondItem="7nM-og-Wf0" secondAttribute="trailing" id="CZ6-cw-kEm"/>
+                <constraint firstItem="ekE-VD-gJg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="N9g-I4-bYp"/>
+                <constraint firstAttribute="bottom" secondItem="BaF-4E-YkS" secondAttribute="bottom" id="RWe-3r-naF"/>
+                <constraint firstItem="Ihi-gQ-17l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="TNR-LU-p2t"/>
+                <constraint firstItem="BaF-4E-YkS" firstAttribute="centerY" secondItem="ekE-VD-gJg" secondAttribute="centerY" id="Xoj-TB-RZy"/>
+                <constraint firstItem="Ohg-vU-hYB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZzB-T2-4Nh"/>
+                <constraint firstAttribute="bottom" secondItem="Ohg-vU-hYB" secondAttribute="bottom" constant="30" id="asA-Wg-oqJ"/>
+                <constraint firstAttribute="trailing" secondItem="Ihi-gQ-17l" secondAttribute="trailing" constant="5" id="b7f-v9-88B"/>
+                <constraint firstItem="7nM-og-Wf0" firstAttribute="top" secondItem="Ohg-vU-hYB" secondAttribute="bottom" id="bv4-bG-BWM"/>
+                <constraint firstAttribute="bottom" secondItem="7nM-og-Wf0" secondAttribute="bottom" id="cDR-h8-ezc"/>
+                <constraint firstItem="7nM-og-Wf0" firstAttribute="leading" secondItem="BaF-4E-YkS" secondAttribute="trailing" constant="5" id="qNQ-fm-jlq"/>
+                <constraint firstItem="BaF-4E-YkS" firstAttribute="top" secondItem="Ohg-vU-hYB" secondAttribute="bottom" id="tsl-KG-Tct"/>
+                <constraint firstItem="Ohg-vU-hYB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="z3c-gM-rz5"/>
+            </constraints>
+            <size key="customSize" width="303" height="173"/>
+            <connections>
+                <outlet property="cityBtn" destination="7nM-og-Wf0" id="e9a-ob-56M"/>
+                <outlet property="liveImageView" destination="Ohg-vU-hYB" id="SMW-kZ-HJH"/>
+                <outlet property="nickName" destination="BaF-4E-YkS" id="2u3-vE-qn4"/>
+                <outlet property="onlineBtn" destination="Ihi-gQ-17l" id="CeR-3p-cm7"/>
+            </connections>
+            <point key="canvasLocation" x="3.5" y="16.5"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="close_view_persons" width="10" height="10"/>
+        <image name="home_live_player_normal" width="14" height="14"/>
+        <image name="ico_location" width="12" height="12"/>
+        <image name="live_cell_default_phone" width="103" height="103"/>
+    </resources>
+</document>

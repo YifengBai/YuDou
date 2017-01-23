@@ -40,8 +40,8 @@
         <!--关注-->
         <scene sceneID="rag-jI-yn9">
             <objects>
-                <navigationController id="8rA-Hx-7KN" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="关注" image="btn_live_normal" selectedImage="btn_live_selected" id="cg6-F0-08A"/>
+                <navigationController id="8rA-Hx-7KN" customClass="CustomNavigationController" customModule="YuDou" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="关注" image="tabFocus" selectedImage="tabFocusHL" id="cg6-F0-08A"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Ydy-5y-Vic">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -57,7 +57,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="btn_live_normal" width="30" height="24"/>
-        <image name="btn_live_selected" width="30" height="24"/>
+        <image name="tabFocus" width="24" height="24"/>
+        <image name="tabFocusHL" width="24" height="24"/>
     </resources>
 </document>

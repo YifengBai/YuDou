@@ -46,3 +46,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+/*
+ 打印LOG的弊端:
+ 1.非常消耗性能
+ 2.如果app部署到AppStore之后用户是看不到LOG的
+ 
+ 所以
+ 开发阶段: 显示LOG
+ 部署阶段: 隐藏LOG
+ */
+func YFLog<T>(message: T, fileName: String = #file, methodName: String = #function, lineNumber: Int = #line)
+{
+    #if DEBUG
+        //    print("\((fileName as NSString).pathComponents.last!).\(methodName)[\(lineNumber)]:\(message)")
+        print("\(methodName)[\(lineNumber)]:\(message)")
+    #endif
+}
+
