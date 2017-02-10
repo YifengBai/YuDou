@@ -40,4 +40,5 @@ class LiveBaseCell: UICollectionViewCell {
             
         }
     }
+    
 }

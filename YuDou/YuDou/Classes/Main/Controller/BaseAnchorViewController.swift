@@ -8,7 +8,7 @@
 
 import UIKit
 
-private let kItemMargin : CGFloat = 10
+let kItemMargin : CGFloat = 10
 private let kHeaderViewH : CGFloat = 50
 
 let kNormalItemW = (kScreenW - 3 * kItemMargin) / 2
@@ -16,7 +16,7 @@ let kNormalItemH = kNormalItemW * 3 / 4
 let kPrettyItemH = kNormalItemW * 4 / 3
 
 private let HeaderViewId = "collectionSectionHeaderId"
-private let GameCellId = "GameCellId"
+let GameCellId = "GameCellId"
 let BeautyCellId = "BeautyCellId"
 
 class BaseAnchorViewController: BaseViewController {
@@ -44,9 +44,13 @@ class BaseAnchorViewController: BaseViewController {
         
         return collectionView
     }()
+    
+    fileprivate var startOffY : CGFloat = 0
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
         setupUI()
         loadData()
@@ -71,7 +75,7 @@ extension BaseAnchorViewController {
     }
 }
 
-extension BaseAnchorViewController: UICollectionViewDelegate, UICollectionViewDataSource {
+extension BaseAnchorViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
      
@@ -105,5 +109,28 @@ extension BaseAnchorViewController: UICollectionViewDelegate, UICollectionViewDa
         return header
         
     }
+}
+
+extension BaseAnchorViewController : UICollectionViewDelegate {
+    
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        let nextOffY = scrollView.contentOffset.y
+        
+        var scrollDrection : ScrollDirection!
+        if nextOffY > startOffY {
+            scrollDrection = .ScrollDown
+        } else {
+            scrollDrection = .ScrollUp
+        }
+//        guard let parentVC = self.parent as? BaseViewController else { return }
+//        parentVC.navigationBarTransform(direction: scrollDrection)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: NotificationNavigationBarTransform), object: scrollDrection)
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        startOffY = scrollView.contentOffset.y
+    }
+    
 }
 

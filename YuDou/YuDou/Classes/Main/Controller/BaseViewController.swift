@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum ScrollDirection {
+    case ScrollUp
+    case ScrollDown
+}
+
 class BaseViewController: UIViewController {
     
     var contentView : UIView?
@@ -31,6 +36,18 @@ class BaseViewController: UIViewController {
 
         
         setupUI()
+        
+    }
+    
+    func navigationBarTransform(direction: ScrollDirection) {
+        
+        switch direction {
+        case .ScrollUp:
+            self.navigationController?.setNavigationBarHidden(false, animated: true)
+        case .ScrollDown:
+            self.navigationController?.setNavigationBarHidden(true, animated: true)
+        }
+        
         
     }
 }

@@ -26,7 +26,8 @@ class CycleScrollView: UIView {
         colleV.dataSource = self
         colleV.isPagingEnabled = true
         colleV.register(UICollectionViewCell.self, forCellWithReuseIdentifier: CycleViewCollectionId)
-        
+        colleV.showsVerticalScrollIndicator = false
+        colleV.showsHorizontalScrollIndicator = false
         return colleV
     }()
     
@@ -48,25 +49,11 @@ class CycleScrollView: UIView {
             
             pageControl.numberOfPages = slide.count
             
+            let indexPath = IndexPath(item: slide.count * 200, section: 0)
+            collectionView.scrollToItem(at: indexPath, at: .left, animated: false)
 
-            
-            if slide.count > 1 {
-//                // 将第一张添加到最后面
-//                let imageView = UIImageView(frame: CGRect(x: self.frame.width * CGFloat(slide.count), y: 0, width: frame.width, height: frame.height))
-//                let url = URL(string:  (slide.first?.pic_url)!)
-//                imageView.kf.setImage(with: url, placeholder: UIImage(named: "Img_default"))
-//                collectionView.addSubview(imageView)
-//                
-//                // 将最后一张添加到最前面
-//                let imageView1 = UIImageView(frame: CGRect(x: -self.frame.width , y: 0, width: frame.width, height: frame.height))
-//                let url1 = URL(string:  (slide.last?.pic_url)!)
-//                imageView1.kf.setImage(with: url1, placeholder: UIImage(named: "Img_default"))
-//                collectionView.addSubview(imageView1)
-//                
-//                collectionView.contentInset = UIEdgeInsetsMake(0, -self.frame.width, 0, self.frame.width)
-//                collectionView.scrollToItem(at: IndexPath(item: 0, section: 0), at: .top, animated: false)
-//                pageControl.currentPage = 0
-            }
+            removeCycleTimer()
+            addCycleTimer()
             
         }
     }
@@ -97,28 +84,14 @@ extension CycleScrollView : UICollectionViewDataSource {
             return 0
         }
         
-//        if count > 1 {
-//            return count + 2
-//        }
-        
-        return count
+        return count * 10000
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CycleViewCollectionId, for: indexPath)
         
-        let data = slideArray?[indexPath.item]
-        
-//        if (slideArray?.count)! > 1 {
-//            if indexPath.item == 0 {
-//                data = slideArray?.last
-//            } else if indexPath.item == (slideArray?.count)! + 1 {
-//                data = slideArray?.first
-//            } else {
-//                data = slideArray?[indexPath.item - 1]
-//            }
-//        }
+        let data = slideArray?[indexPath.item % slideArray!.count]
         
         for subv in cell.contentView.subviews {
             subv.removeFromSuperview()
@@ -143,58 +116,23 @@ extension CycleScrollView {
         
         // 1.获取滚动的偏移量
         let offsetX = scrollView.contentOffset.x + scrollView.bounds.width * 0.5
-//        
-//        // 2.计算pageControl的currentIndex
-//        // 滚动到最后一张(既显示的是第一张)，就滚动到第一张
-//        if offsetX > scrollView.bounds.width * CGFloat((slideArray?.count)!) + scrollView.bounds.width * 0.5 {
-//            scrollView.setContentOffset(CGPoint(x:scrollView.bounds.width, y:0), animated: false)
-//            pageControl.currentPage = 0
-//            return
-//        }
-//        // 滚动到第一张(即显示的是最后一张)
-//        if offsetX <= -scrollView.bounds.width * 0.5 {
-//            scrollView.setContentOffset(CGPoint(x:scrollView.bounds.width * CGFloat((slideArray?.count)! - 1), y:0), animated: false)
-//            pageControl.currentPage = (slideArray?.count)! - 1
-//            return
-//        }
-        pageControl.currentPage = Int((offsetX) / scrollView.bounds.width)
+       
+        pageControl.currentPage = Int((offsetX) / scrollView.bounds.width) % slideArray!.count
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
         
-        YFLog(message: "滚动结束")
         
     }
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
-        
+        removeCycleTimer()
         
     }
     func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
-        
+        addCycleTimer()
     }
-    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
-        
-//        YFLog(message: "滚动结束s")
-        
-//        let offsetX = scrollView.contentOffset.x
-//        
-//        
-//        // 计算pageControl的currentIndex
-//        // 滚动到最后一张(既显示的是第一张)，就滚动到第一张
-//        if offsetX > scrollView.bounds.width * CGFloat((slideArray?.count)!) + scrollView.bounds.width * 0.5 {
-//            scrollView.setContentOffset(CGPoint(x:scrollView.bounds.width, y:0), animated: false)
-//            pageControl.currentPage = 0
-//            return
-//        }
-//        // 滚动到第一张(即显示的是最后一张)
-//        if offsetX <= -scrollView.bounds.width * 0.5 {
-//            scrollView.setContentOffset(CGPoint(x:scrollView.bounds.width * CGFloat((slideArray?.count)! - 1), y:0), animated: false)
-//            pageControl.currentPage = (slideArray?.count)! - 1
-//            return
-//        }
-        
-    }
+
 }
 
 // MARK: - 对定时器的操作方法

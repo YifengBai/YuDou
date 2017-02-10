@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Roe-hJ-yO3" customClass="GameIconCell" customModule="YuDou" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="277" height="182"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="英雄联盟" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zsa-Fc-ska">
+                    <rect key="frame" x="106.5" y="143.5" width="65.5" height="19.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bUW-cL-Y9e">
+                    <rect key="frame" x="83" y="17.5" width="111" height="111"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="bUW-cL-Y9e" secondAttribute="height" id="pDT-sq-lax"/>
+                    </constraints>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="bUW-cL-Y9e" firstAttribute="width" secondItem="Roe-hJ-yO3" secondAttribute="width" multiplier="0.4" id="8uo-bp-uQD"/>
+                <constraint firstItem="zsa-Fc-ska" firstAttribute="top" secondItem="bUW-cL-Y9e" secondAttribute="bottom" constant="15" id="EmO-Nj-x2t"/>
+                <constraint firstItem="zsa-Fc-ska" firstAttribute="centerX" secondItem="Roe-hJ-yO3" secondAttribute="centerX" id="J8e-TL-QWE"/>
+                <constraint firstItem="bUW-cL-Y9e" firstAttribute="centerX" secondItem="Roe-hJ-yO3" secondAttribute="centerX" id="NR3-fk-slB"/>
+                <constraint firstItem="bUW-cL-Y9e" firstAttribute="centerY" secondItem="Roe-hJ-yO3" secondAttribute="centerY" multiplier="0.8" id="NRG-Gs-o2S"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gameIcon" destination="bUW-cL-Y9e" id="zdM-pb-Ppn"/>
+                <outlet property="gameName" destination="zsa-Fc-ska" id="hMJ-N2-gtQ"/>
+            </connections>
+            <point key="canvasLocation" x="-81.5" y="-240"/>
+        </view>
+    </objects>
+</document>

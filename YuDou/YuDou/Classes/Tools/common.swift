@@ -16,3 +16,17 @@ let kScreenH = UIScreen.main.bounds.height
 let kScreenW = UIScreen.main.bounds.width
 
 let ThemColor = UIColor.orange
+
+// MARK: - 通知中心
+let NotificationNavigationBarTransform = "NavigationBarTransform"
+
+
+
+// MARK: - common func
+
+infix operator ???: NilCoalescingPrecedence
+
+public func ???<T>(optional: T?, defaultValue: @autoclosure () -> String) -> String {
+    
+    return optional.map { String(describing: $0) } ?? defaultValue()
+}

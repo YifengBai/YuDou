@@ -12,6 +12,7 @@ class BeautyCell: LiveBaseCell {
 
     @IBOutlet weak var cityBtn: UIButton!
     
+    @IBOutlet weak var numLabelW: NSLayoutConstraint!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

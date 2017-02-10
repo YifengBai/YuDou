@@ -77,9 +77,10 @@ extension RecommendViewModel {
             self.verticalData.tag_name = "颜值"
             self.verticalData.icon_name = "home_header_phone"
             
-            for dict in dataArray {
+            for (index, dict) in dataArray.enumerated() {
                 let roomModel = BaseRoomModel(dict: dict)
                 self.verticalData.anchors.append(roomModel)
+                if index >= 3 { break }
             }
             
             GCDGroup.leave()
@@ -95,6 +96,9 @@ extension RecommendViewModel {
             
             for dict in dataArray {
                 let groupModel = BaseGroupRoomModel(dict: dict)
+                
+                if groupModel.tag_name == "颜值" { continue }
+                
                 self.groupData.append(groupModel)
                 
             }

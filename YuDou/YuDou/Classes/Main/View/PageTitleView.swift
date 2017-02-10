@@ -185,8 +185,6 @@ extension PageTitleView {
         // 4.记录最新的index
         curSelectedIndex = targetIndex
 
-        
-        
     }
 }
 

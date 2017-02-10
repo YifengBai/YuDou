@@ -52,12 +52,42 @@ class HomeViewController: BaseViewController {
         // 设置UI
         setupUI()
         
-        
         // 获取数据
         loadHomeCateData()
         
+        NotificationCenter.default.addObserver(self, selector: #selector(self.transformView(notification:)), name: NSNotification.Name(rawValue: NotificationNavigationBarTransform), object: nil)
+        
+    }
+    
+    deinit {
+        // 移除通知
+        NotificationCenter.default.removeObserver(self)
     }
 
+    @objc fileprivate func transformView(notification: Notification) {
+        
+        let objc = notification.object as! ScrollDirection
+        
+        if objc == .ScrollUp {
+            if self.pageTitleView.frame.origin.y == kNavitagionBarH+kStatusBarH {
+                return
+            }
+            UIView.animate(withDuration: 0.2, animations: {
+                self.pageTitleView.frame = CGRect(x: 0, y: kNavitagionBarH+kStatusBarH, width: kScreenW, height: kTitleH)
+                self.pageContentView.frame = CGRect(x: 0, y: kTitleH+kNavitagionBarH+kStatusBarH, width: kScreenW, height: kScreenH - kNavitagionBarH - kStatusBarH - kTitleH)
+            })
+        } else {
+            if self.pageTitleView.frame.origin.y == kStatusBarH {
+                return
+            }
+            UIView.animate(withDuration: 0.2, animations: {
+                self.pageTitleView.frame = CGRect(x: 0, y: kStatusBarH, width: kScreenW, height: kTitleH)
+                self.pageContentView.frame = CGRect(x: 0, y: kTitleH + kStatusBarH, width: kScreenW, height: kScreenH - kTitleH - kStatusBarH)
+            })
+        }
+        super.navigationBarTransform(direction: objc)
+        
+    }
     
     
 }

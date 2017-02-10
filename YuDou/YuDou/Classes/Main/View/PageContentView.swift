@@ -15,7 +15,6 @@ protocol PageContentViewDelegate : class {
 private let PageCollectionCellId = "PageCollectionCellId"
 
 class PageContentView: UIView {
-
     
     fileprivate var childControllers: [UIViewController]
     fileprivate weak var parentVC: UIViewController?
@@ -31,6 +30,7 @@ class PageContentView: UIView {
         layout.minimumLineSpacing = 0
         layout.minimumInteritemSpacing = 0
         layout.scrollDirection = .horizontal
+        layout.sectionInset = UIEdgeInsetsMake(0, 0, 0, 0)
         
         let collectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: layout)
         collectionView.showsHorizontalScrollIndicator = false
@@ -40,6 +40,7 @@ class PageContentView: UIView {
         collectionView.delegate = self
         collectionView.backgroundColor = UIColor.white
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: PageCollectionCellId)
+//        collectionView.autoresizingMask = [.flexibleHeight, .flexibleWidth]
         
         return collectionView
     }()
@@ -80,7 +81,7 @@ extension PageContentView {
 }
 
 // MARK: - UICollectionViewDataSource, UICollectionViewDelegate
-extension PageContentView : UICollectionViewDataSource, UICollectionViewDelegate {
+extension PageContentView : UICollectionViewDataSource, UICollectionViewDelegate, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return childControllers.count
@@ -101,7 +102,6 @@ extension PageContentView : UICollectionViewDataSource, UICollectionViewDelegate
         
         return cell
     }
-    
     
     func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
         

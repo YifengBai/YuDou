@@ -8,8 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		7722D49C8B40FC158EBE037D /* Pods_YuDou.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C862B987C636F3FFDD7DF40 /* Pods_YuDou.framework */; };
+		8F384EDC1E4C10A5004BFC86 /* LiveHeaderCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F384EDB1E4C10A5004BFC86 /* LiveHeaderCell.swift */; };
 		8F3BD0411E1D1E15006C7648 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD0401E1D1E15006C7648 /* HomeViewController.swift */; };
 		8F3BD0441E1D1FD0006C7648 /* UIBarButtonItem+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3BD0431E1D1FD0006C7648 /* UIBarButtonItem+Extension.swift */; };
+		8F44FBAC1E4AB24700A95E99 /* GameIconCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F44FBAB1E4AB24700A95E99 /* GameIconCell.swift */; };
+		8F44FBAE1E4AB26500A95E99 /* GameIconCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8F44FBAD1E4AB26500A95E99 /* GameIconCell.xib */; };
+		8F44FBB31E4ABB3600A95E99 /* GameIconModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F44FBB21E4ABB3600A95E99 /* GameIconModel.swift */; };
+		8F44FBB51E4AC0E800A95E99 /* LiveListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F44FBB41E4AC0E800A95E99 /* LiveListViewController.swift */; };
+		8F44FBB71E4AC31F00A95E99 /* LiveListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F44FBB61E4AC31F00A95E99 /* LiveListViewModel.swift */; };
+		8F44FBBD1E4ACC2900A95E99 /* LiveHeaderCategoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F44FBBC1E4ACC2900A95E99 /* LiveHeaderCategoryView.swift */; };
+		8F50C5161E49672300B66587 /* ScrollSegement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50C5151E49672300B66587 /* ScrollSegement.swift */; };
+		8F50C5181E49C7D500B66587 /* LiveCommonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50C5171E49C7D500B66587 /* LiveCommonViewController.swift */; };
+		8F50C51A1E49C84300B66587 /* LiveChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50C5191E49C84300B66587 /* LiveChildViewController.swift */; };
+		8F50C51C1E49CF1200B66587 /* ColumnModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50C51B1E49CF1200B66587 /* ColumnModel.swift */; };
+		8F593DB41E4D50130014AB20 /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F593DB31E4D50130014AB20 /* GradientView.swift */; };
 		8F5A3C221E2C59E100AAA385 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A3C211E2C59E100AAA385 /* UIColor+Extension.swift */; };
 		8F5A3C241E2C5D7500AAA385 /* common.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A3C231E2C5D7500AAA385 /* common.swift */; };
 		8F5A3C261E2C5E9400AAA385 /* NetWorkTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F5A3C251E2C5E9400AAA385 /* NetWorkTools.swift */; };
@@ -74,8 +86,20 @@
 		12876A27399B7B8071D21EBC /* Pods-YuDou.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuDou.debug.xcconfig"; path = "Pods/Target Support Files/Pods-YuDou/Pods-YuDou.debug.xcconfig"; sourceTree = "<group>"; };
 		1C862B987C636F3FFDD7DF40 /* Pods_YuDou.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YuDou.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		731A781DF13471296D211EB9 /* Pods-YuDou.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YuDou.release.xcconfig"; path = "Pods/Target Support Files/Pods-YuDou/Pods-YuDou.release.xcconfig"; sourceTree = "<group>"; };
+		8F384EDB1E4C10A5004BFC86 /* LiveHeaderCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeaderCell.swift; sourceTree = "<group>"; };
 		8F3BD0401E1D1E15006C7648 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8F3BD0431E1D1FD0006C7648 /* UIBarButtonItem+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Extension.swift"; sourceTree = "<group>"; };
+		8F44FBAB1E4AB24700A95E99 /* GameIconCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIconCell.swift; sourceTree = "<group>"; };
+		8F44FBAD1E4AB26500A95E99 /* GameIconCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GameIconCell.xib; sourceTree = "<group>"; };
+		8F44FBB21E4ABB3600A95E99 /* GameIconModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameIconModel.swift; sourceTree = "<group>"; };
+		8F44FBB41E4AC0E800A95E99 /* LiveListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListViewController.swift; sourceTree = "<group>"; };
+		8F44FBB61E4AC31F00A95E99 /* LiveListViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveListViewModel.swift; sourceTree = "<group>"; };
+		8F44FBBC1E4ACC2900A95E99 /* LiveHeaderCategoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveHeaderCategoryView.swift; sourceTree = "<group>"; };
+		8F50C5151E49672300B66587 /* ScrollSegement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ScrollSegement.swift; sourceTree = "<group>"; };
+		8F50C5171E49C7D500B66587 /* LiveCommonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveCommonViewController.swift; sourceTree = "<group>"; };
+		8F50C5191E49C84300B66587 /* LiveChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LiveChildViewController.swift; sourceTree = "<group>"; };
+		8F50C51B1E49CF1200B66587 /* ColumnModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColumnModel.swift; sourceTree = "<group>"; };
+		8F593DB31E4D50130014AB20 /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 		8F5A3C211E2C59E100AAA385 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		8F5A3C231E2C5D7500AAA385 /* common.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = common.swift; sourceTree = "<group>"; };
 		8F5A3C251E2C5E9400AAA385 /* NetWorkTools.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetWorkTools.swift; sourceTree = "<group>"; };
@@ -159,6 +183,14 @@
 				8F967E3A1E2DA785003CB9EE /* UIImage+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		8F44FBAF1E4AB64A00A95E99 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				8F44FBB61E4AC31F00A95E99 /* LiveListViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		8F5A3C291E2CA41700AAA385 /* ViewModel */ = {
@@ -288,6 +320,7 @@
 		8FB4A83C1E1C805800614903 /* Live */ = {
 			isa = PBXGroup;
 			children = (
+				8F44FBAF1E4AB64A00A95E99 /* ViewModel */,
 				8FB4A83D1E1C805800614903 /* Controller */,
 				8FB4A83E1E1C805800614903 /* Model */,
 				8FB4A83F1E1C805800614903 /* View */,
@@ -300,6 +333,9 @@
 			children = (
 				8FB4A84E1E1C8FB300614903 /* Live.storyboard */,
 				8F5D10441E36035A001F5C91 /* LiveViewController.swift */,
+				8F50C5171E49C7D500B66587 /* LiveCommonViewController.swift */,
+				8F50C5191E49C84300B66587 /* LiveChildViewController.swift */,
+				8F44FBB41E4AC0E800A95E99 /* LiveListViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -307,6 +343,8 @@
 		8FB4A83E1E1C805800614903 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				8F50C51B1E49CF1200B66587 /* ColumnModel.swift */,
+				8F44FBB21E4ABB3600A95E99 /* GameIconModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -314,6 +352,11 @@
 		8FB4A83F1E1C805800614903 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8F50C5151E49672300B66587 /* ScrollSegement.swift */,
+				8F44FBAB1E4AB24700A95E99 /* GameIconCell.swift */,
+				8F44FBAD1E4AB26500A95E99 /* GameIconCell.xib */,
+				8F44FBBC1E4ACC2900A95E99 /* LiveHeaderCategoryView.swift */,
+				8F384EDB1E4C10A5004BFC86 /* LiveHeaderCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -360,6 +403,7 @@
 				8FD6CBEB1E31FFC9008A16FF /* BeautyCell.swift */,
 				8FD6CBEC1E31FFC9008A16FF /* BeautyCell.xib */,
 				8FD6CBEF1E3204CA008A16FF /* LiveBaseCell.swift */,
+				8F593DB31E4D50130014AB20 /* GradientView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -464,8 +508,8 @@
 				8F967E341E2DA51C003CB9EE /* Find */,
 				8FB4A8341E1C805800614903 /* Follow */,
 				8FB4A8441E1C805800614903 /* Profile */,
-				8FB4A8381E1C805800614903 /* Home */,
 				8FB4A83C1E1C805800614903 /* Live */,
+				8FB4A8381E1C805800614903 /* Home */,
 				8FB4A8401E1C805800614903 /* Main */,
 				8FB4A8481E1C805800614903 /* Tools */,
 			);
@@ -602,6 +646,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F44FBAE1E4AB26500A95E99 /* GameIconCell.xib in Resources */,
 				8FBF14261E1BF28C00CA19D0 /* LaunchScreen.storyboard in Resources */,
 				8FD6CBEE1E31FFC9008A16FF /* BeautyCell.xib in Resources */,
 				8FBF14231E1BF28C00CA19D0 /* Assets.xcassets in Resources */,
@@ -685,13 +730,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8F384EDC1E4C10A5004BFC86 /* LiveHeaderCell.swift in Sources */,
 				8F5A3C421E2CCADA00AAA385 /* AmuseViewController.swift in Sources */,
 				8FE212F11E34B2420064FF7C /* HomeCateModel.swift in Sources */,
+				8F593DB41E4D50130014AB20 /* GradientView.swift in Sources */,
 				8FE15AD81E35000700EFF1ED /* AmuseViewModel.swift in Sources */,
 				8F5D10431E35E4BC001F5C91 /* AmuseGameCell.swift in Sources */,
 				8F5D10451E36035A001F5C91 /* LiveViewController.swift in Sources */,
 				8F5D103D1E35AD0C001F5C91 /* SlideModel.swift in Sources */,
+				8F50C5161E49672300B66587 /* ScrollSegement.swift in Sources */,
 				8F5A3C261E2C5E9400AAA385 /* NetWorkTools.swift in Sources */,
+				8F44FBB31E4ABB3600A95E99 /* GameIconModel.swift in Sources */,
 				8F5A3C351E2CA51E00AAA385 /* PageTitleView.swift in Sources */,
 				8FD6CBE91E31FF97008A16FF /* GameCell.swift in Sources */,
 				8F5A3C241E2C5D7500AAA385 /* common.swift in Sources */,
@@ -701,20 +750,27 @@
 				8FD6CBF01E3204CA008A16FF /* LiveBaseCell.swift in Sources */,
 				8F5A3C341E2CA51E00AAA385 /* PageContentView.swift in Sources */,
 				8F5A3C3E1E2CCA5C00AAA385 /* RecommendViewController.swift in Sources */,
+				8F50C5181E49C7D500B66587 /* LiveCommonViewController.swift in Sources */,
 				8F5A3C381E2CC2B000AAA385 /* BaseViewController.swift in Sources */,
 				8FD6CBED1E31FFC9008A16FF /* BeautyCell.swift in Sources */,
 				8FE212EE1E34809B0064FF7C /* SectionHeaderView.swift in Sources */,
+				8F44FBB71E4AC31F00A95E99 /* LiveListViewModel.swift in Sources */,
 				8FD6CBE41E31F866008A16FF /* BaseRoomModel.swift in Sources */,
+				8F44FBBD1E4ACC2900A95E99 /* LiveHeaderCategoryView.swift in Sources */,
 				8FBF141C1E1BF28C00CA19D0 /* AppDelegate.swift in Sources */,
 				8FD6CBE61E31FD43008A16FF /* BaseGroupRoomModel.swift in Sources */,
+				8F44FBB51E4AC0E800A95E99 /* LiveListViewController.swift in Sources */,
 				8F5D103B1E35A689001F5C91 /* CycleScrollView.swift in Sources */,
 				8F967E3D1E2DAA51003CB9EE /* CustomNavigationController.swift in Sources */,
 				8F967E3B1E2DA785003CB9EE /* UIImage+Extension.swift in Sources */,
 				8F5A3C221E2C59E100AAA385 /* UIColor+Extension.swift in Sources */,
+				8F44FBAC1E4AB24700A95E99 /* GameIconCell.swift in Sources */,
 				8F5D103F1E35DB8D001F5C91 /* AmuseHeaderView.swift in Sources */,
 				8FB4A84A1E1C835A00614903 /* MainViewController.swift in Sources */,
 				8F3BD0411E1D1E15006C7648 /* HomeViewController.swift in Sources */,
 				8F5A3C3C1E2CC73600AAA385 /* BaseAnchorViewController.swift in Sources */,
+				8F50C51A1E49C84300B66587 /* LiveChildViewController.swift in Sources */,
+				8F50C51C1E49CF1200B66587 /* ColumnModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

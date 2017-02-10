@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,7 +28,7 @@
                     </label>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihi-gQ-17l">
                         <rect key="frame" x="239" y="5" width="59" height="15"/>
-                        <color key="backgroundColor" red="0.26040716871131742" green="0.26177055702917773" blue="0.26177055702917773" alpha="0.1727137653374233" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
                         <state key="normal" title="10.4万人" image="close_view_persons"/>
                     </button>
@@ -46,12 +46,22 @@
                             <constraint firstAttribute="width" constant="20" id="NbF-NI-dYe"/>
                         </constraints>
                     </imageView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zml-oh-64M" customClass="GradientView" customModule="YuDou" customModuleProvider="target">
+                        <rect key="frame" x="253" y="0.0" width="50" height="20"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="NPE-6V-XNO"/>
+                            <constraint firstAttribute="width" constant="50" id="W59-7F-Vow"/>
+                        </constraints>
+                    </view>
                 </subviews>
             </view>
             <constraints>
+                <constraint firstAttribute="trailing" secondItem="zml-oh-64M" secondAttribute="trailing" id="2ss-pX-QnT"/>
                 <constraint firstAttribute="trailing" secondItem="Ohg-vU-hYB" secondAttribute="trailing" id="5eN-GJ-E0v"/>
                 <constraint firstItem="BaF-4E-YkS" firstAttribute="leading" secondItem="ekE-VD-gJg" secondAttribute="trailing" constant="5" id="6uS-mg-Nny"/>
                 <constraint firstAttribute="trailing" secondItem="7nM-og-Wf0" secondAttribute="trailing" id="CZ6-cw-kEm"/>
+                <constraint firstItem="zml-oh-64M" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Cyy-vn-fFQ"/>
                 <constraint firstItem="ekE-VD-gJg" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="N9g-I4-bYp"/>
                 <constraint firstAttribute="bottom" secondItem="BaF-4E-YkS" secondAttribute="bottom" id="RWe-3r-naF"/>
                 <constraint firstItem="Ihi-gQ-17l" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="TNR-LU-p2t"/>
@@ -70,6 +80,7 @@
                 <outlet property="cityBtn" destination="7nM-og-Wf0" id="e9a-ob-56M"/>
                 <outlet property="liveImageView" destination="Ohg-vU-hYB" id="SMW-kZ-HJH"/>
                 <outlet property="nickName" destination="BaF-4E-YkS" id="2u3-vE-qn4"/>
+                <outlet property="numLabelW" destination="W59-7F-Vow" id="FKO-Np-Ejc"/>
                 <outlet property="onlineBtn" destination="Ihi-gQ-17l" id="CeR-3p-cm7"/>
             </connections>
             <point key="canvasLocation" x="3.5" y="16.5"/>
